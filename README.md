@@ -12,23 +12,22 @@ už byl unaven kódováním problémů do výrokové logiky, rozhodl se zvolit
 expresivnější prvořádovou logiku a využít SMT solver.</p>
 <h2 id="zadání">Zadání</h2>
 <p>Vstupem problému je pět jídel reprezentovaných čísly <span
-class="math inline">\(1, 2, \ldots, 5\)</span>, kde každé z jídel má
+class="math inline">1, 2,..., 5</span>, kde každé z jídel má
 následující parametry nabývající hodnot z přirozených čísel (včetně
 0):</p>
 <ul>
-<li>Cena <span class="math inline">\(c_{i}\)</span>, kterou je potřeba
+<li>Cena <em>c<sub>i</sub></em>, kterou je potřeba
 zaplatit za jednu porci daného jídlo.</li>
-<li>Kalorická hodnota <span class="math inline">\(k_{i}\)</span> jedné
+<li>Kalorická hodnota <em>k<sub>i</sub></em> jedné
 porce daného jídla (čím vyšší, tím lepší).</li>
-<li>Počet porcí <span class="math inline">\(m_{i}\)</span> daného jídla
+<li>Počet porcí <em>m<sub>i</sub></em> daného jídla
 k dispozici.</li>
 </ul>
 <p>Cílem je najít vhodnou kombinaci jídel s co největší kalorickou
 hodnotou, přičemž si student může objednat více porcí jednoho druhu
 jídla. Tato kombinace musí splňovat následující podmínky:</p>
 <ol type="1">
-<li>Celková cena obědu je maximálně <span
-class="math inline">\(max\_cena\)</span>.</li>
+<li>Celková cena obědu je maximálně <em>(max_cena)</em>.</li>
 <li>Požadovaný počet porcí každého jídla nepřesahuje maximální
 počet.</li>
 <li>Celkový součet kalorií je <em>maximální</em>, jinými slovy,
@@ -39,10 +38,9 @@ neexistuje jiné řešení, které by splňovalo podmínky <code>1</code> a
 <p>Vaším úkolem je do vyznačeného místa v souboru
 <code>projekt2.smt2</code> doplnit formule, které zajistí, že:</p>
 <ol type="1">
-<li>Každá proměnná <span class="math inline">\(n_i\)</span> je
-interpretována jako objednaný počet porcí jídla <span
-class="math inline">\(i\)</span>.</li>
-<li>Proměnná <span class="math inline">\(best\)</span> je interpretována
+<li>Každá proměnná <em>n<sub>i</sub></em> je
+interpretována jako objednaný počet porcí jídla <em>i</em>.</li>
+<li>Proměnná <em>best</em> je interpretována
 jako <em>optimální</em> kalorická hodnota.</li>
 </ol>
 <p>Tyto promměné přitom musí splňovat podmínky uvedené v předchozí
